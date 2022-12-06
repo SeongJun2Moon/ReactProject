@@ -2,7 +2,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+.s_input_text, .s_input_password {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -11,7 +11,7 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+.s_input_text:focus, .s_input_password:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -22,7 +22,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+.s_button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -33,21 +33,22 @@ button {
   opacity: 0.9;
 }
 
-button:hover {
+.s_button:hover {
   opacity:1;
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn {
+.s_cancelbtn, .s_signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.s_cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
 
 /* Add padding to container elements */
 .container {

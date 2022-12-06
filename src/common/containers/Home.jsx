@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import {Navigation, Counter, Footer, Login, SignUp} from "../components"
-import { Schedule } from "."
+import {Navigation, Counter, Footer, Login, SignUp} from "../"
+import {Schedule} from "../../todos"
 
 const Home = () => {
     return (<>
@@ -19,8 +19,8 @@ const Home = () => {
                 <Route path="/Home" element={<h1>하이</h1>}></Route>
                 <Route path="/counter" element={<Counter/>}></Route>
                 <Route path="/todos/*" element={<Schedule/>}></Route>
-                <Route path="/signup" element={<SignUp/>}></Route>
-                <Route path="/login" element={<Login/>}></Route>
+                <Route path="/auth/signup" element={<SignUp/>}></Route>
+                <Route path="/auth/login" element={<Login/>}></Route>
             </Routes>
             </td>
         </tr>
