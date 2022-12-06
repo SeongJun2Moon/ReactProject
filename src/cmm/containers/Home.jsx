@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import {Navigation, Counter, Footer, Login, SignUp} from "../"
-import {Schedule} from "../../todos"
-
+import {Navigation, Counter, Footer} from "cmm"
+import {Schedule} from "cop"
+import {LoginForm} from "uat"
 const Home = () => {
     return (<>
     <table style={{ width: "1200px", height: "550px", margin: "0 auto", border: "1px solid black"}}>
@@ -16,11 +16,9 @@ const Home = () => {
         <tr style={{ width: "20%",height: "80%",  border: "1px solid black"}}>
             <td style={{ width: "100%", border: "1px solid black"}}>
             <Routes>
-                <Route path="/Home" element={<h1>하이</h1>}></Route>
                 <Route path="/counter" element={<Counter/>}></Route>
-                <Route path="/todos/*" element={<Schedule/>}></Route>
-                <Route path="/auth/signup" element={<SignUp/>}></Route>
-                <Route path="/auth/login" element={<Login/>}></Route>
+                <Route path="/todos" element={<Schedule/>}></Route>
+                <Route path="/login" element={<LoginForm/>}></Route>
             </Routes>
             </td>
         </tr>
