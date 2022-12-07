@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom"
 import {Navigation, Counter, Footer} from "cmm"
 import {Schedule} from "cop"
 import {LoginForm, SignUp} from "uat"
+import dog from '../../img/멍멍이jpg.jpg'
+
 const Home = () => {
     return (<>
     <table style={{ width: "1200px", height: "550px", margin: "0 auto", border: "1px solid black"}}>
@@ -21,6 +23,11 @@ const Home = () => {
                 <Route path="/login" element={<LoginForm/>}></Route>
                 <Route path="/signup" element={<SignUp/>}></Route>
             </Routes>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src={dog}/>
             </td>
         </tr>
         <tr style={{ width: "100%", height: "20%", border: "1px solid black"}}>
