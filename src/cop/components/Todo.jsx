@@ -6,7 +6,8 @@ const Todo = ({ id, text }) => {
 
 	const dispatch = useDispatch();
 
-	const onClick=()=>{
+	const onClick = e => {
+		e.preventDefault()
 		dispatch(
 			deleteTodo({
 				id: id
@@ -17,7 +18,7 @@ const Todo = ({ id, text }) => {
 	return (
 		<li className="task-item">
 			<div>
-				{text}
+				{id} | {text}
 			</div>
 			<div>
 				<button className="remove-task-button" onClick={onClick}>Delete</button>
