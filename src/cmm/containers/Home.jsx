@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom"
-import {Navigation, Counter, Footer} from "cmm"
+import {Navigation2, Counter, Footer} from "cmm"
 import {Schedule} from "cop"
 import {LoginForm, SignUp} from "uat"
 import fasion from '../../img/fasion.png'
+import {Stroke} from "../blog"
 
 const Home = () => {
 
@@ -11,7 +12,7 @@ const Home = () => {
         <thead>
             <tr columns="3" >
                 <td style={{ width: "100%", border: "1px solid black"}}>
-                    <Navigation/>
+                    <Navigation2/>
                 </td>
             </tr>
         </thead>
@@ -23,6 +24,7 @@ const Home = () => {
                 <Route path="/todos" element={<Schedule/>}></Route>
                 <Route path="/login" element={<LoginForm/>}></Route>
                 <Route path="/signup" element={<SignUp/>}></Route>
+                <Route path="/stroke" element={<Stroke/>}></Route>
             </Routes>
             </td>
         </tr>

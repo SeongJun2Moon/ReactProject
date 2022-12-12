@@ -1,6 +1,7 @@
 import '../styles/Login.css'
 import { useState } from "react"
 import { userLoginApi } from '../api'
+
 const Login = () => {
     const [inputs, setInputs] = useState({})
     const {email, password} = inputs;
@@ -10,6 +11,7 @@ const Login = () => {
         const {value, name} = e.target 
         setInputs({...inputs, [name]: value})
     }
+    
     const onClick = e => {
         e.preventDefault()
         const loginRequest = {email, password}

@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
 
-const Navigation = () => <nav>
+const Navigation = () => {
+    return (
+        <>
+        <nav>
     <ul>
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/counter">Counter</Link></li>
@@ -9,5 +12,8 @@ const Navigation = () => <nav>
         <li><Link to="/login">Login</Link></li>
     </ul>
 </nav>
+        </>
+    )
+} 
 
 export default Navigation
