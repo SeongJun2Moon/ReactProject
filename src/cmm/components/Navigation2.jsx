@@ -26,6 +26,7 @@ export default function SimpleBottomNavigation() {
         <BottomNavigationAction onClick={()=>navigate("/signup")} label="회원가입"/>
         <BottomNavigationAction onClick={()=>navigate("/login")} label="로그인"/>
         <BottomNavigationAction onClick={()=>navigate("/stroke")} label="뇌졸중"/>
+        <BottomNavigationAction onClick={()=>navigate("/iris")} label="붓꽃 분류"/>
       </BottomNavigation>
     </Box>
   );

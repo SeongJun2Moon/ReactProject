@@ -4,6 +4,7 @@ import {Schedule} from "cop"
 import {LoginForm, SignUp} from "uat"
 import fasion from '../../img/fasion.png'
 import {Stroke} from "../blog"
+import { Iris } from "shop"
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
                 <Route path="/login" element={<LoginForm/>}></Route>
                 <Route path="/signup" element={<SignUp/>}></Route>
                 <Route path="/stroke" element={<Stroke/>}></Route>
+                <Route path="/iris" element={<Iris/>}></Route>
             </Routes>
             </td>
         </tr>

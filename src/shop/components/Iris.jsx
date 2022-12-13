@@ -1,10 +1,10 @@
-import { stroke } from '../api'
+import { irisApi } from '../api'
 
 
-const Stroke = () => {
+const Iris = () => {
     
     const onClick = () => {
-        stroke().then(()=>{
+        irisApi().then(()=>{
             alert("됐어유")
         })
         .catch(()=>{
@@ -14,7 +14,7 @@ const Stroke = () => {
     
     return (
         <>
-            <button onClick={()=>onClick()}>뇌졸중</button>
+            <button onClick={()=>onClick()}>붓꽃 분류</button>
         </>
     )
     
@@ -22,4 +22,4 @@ const Stroke = () => {
 }
 
 
-export default Stroke
+export default Iris;
